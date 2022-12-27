@@ -5,9 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2464552-dfb7-40d7-9f18-ea842146cb5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/java/com/example/purchasemicroservice/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/PurchaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/request/CourseServiceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/request/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/request/PurchaseServiceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/jwt/JwtProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/jwt/JwtProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/AuthenticationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiGateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CourseMicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../CourseMicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eurekamicroservice/EurekaMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eurekamicroservice/EurekaMicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/java/com/example/purchasemicroservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/java/com/example/purchasemicroservice/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-course-seller/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../react-course-seller/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-course-seller/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-course-seller/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-course-seller/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-course-seller/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +47,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2JMy57HPj9EKXgSnRwek5tBH4bI" />
@@ -31,14 +65,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "terminal",
+    "spring.configuration.checksum": "93edc9039afdcadae6285d98924b6fc9",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="EurekaMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EurekaMicroservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eurekamicroservice.EurekaMicroserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,6 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671902062771</updated>
       <workItem from="1671902064101" duration="179000" />
+      <workItem from="1671902261106" duration="5065000" />
+      <workItem from="1672152091155" duration="2515000" />
     </task>
     <servers />
   </component>

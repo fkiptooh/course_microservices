@@ -18,10 +18,10 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig
 {
-    @Value("${service.security.secure-key-username}")
+    @Value("${service.security-secure-key-username}")
     private String SECURE_KEY_USERNAME;
 
-    @Value("${service.security.secure-key-password}")
+    @Value("${service.security-secure-key-password}")
     private String SECURE_KEY_PASSWORD;
     @Bean
     public PasswordEncoder encoder()

@@ -124,7 +124,7 @@ const RegisterPage = () => {
                     </button>
 
                 </form>
-                <Link to="/login" classname="btn btn-link" style={{color: 'darkgray', textAlign: 'center'}}>
+                <Link to="/login" className="btn btn-link" style={{color: 'darkgray'}}>
                     I have an Account!
                 </Link>
             </div>

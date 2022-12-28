@@ -9,6 +9,8 @@ import { RegisterPage } from './pages/register/RegisterPage';
 import { LoginPage } from './pages/login/LoginPage';
 import { NotFoundPage } from './pages/not-found/NotFoundPage';
 import { UnauthorizedPage } from './pages/unauthorized/UnauthorizedPage';
+import { AuthGuard } from './guards/AuthGuard';
+import { Role } from './models/role';
 
 function App() {
   return (
@@ -18,8 +20,16 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/home" element={<HomePage/>}/>
-          <Route path="/admin" element={<AdminPage/>}/>
-          <Route path="/profile" element={<ProfilePage/>}/>
+          <Route path="/admin" element={
+            <AuthGuard roles={[Role.ADMIN]}>
+              <AdminPage/>
+            </AuthGuard>
+          }/>
+          <Route path="/profile" element={
+            <AuthGuard roles={[Role.ADMIN, Role.USER]}>
+              <ProfilePage/>
+            </AuthGuard>
+          }/>
           <Route path="/register" element={<RegisterPage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
           <Route path="/401" element={<UnauthorizedPage/>}/>

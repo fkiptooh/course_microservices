@@ -112,7 +112,7 @@ const LoginPage = () =>{
                     </button>
 
                 </form>
-                <Link to="/register" classname="btn btn-link" style={{color: 'darkgray', textAlign: 'center'}}>
+                <Link to="/register" className="btn btn-link" style={{color: 'darkgray'}}>
                     Creat A new Account!
                 </Link>
             </div>

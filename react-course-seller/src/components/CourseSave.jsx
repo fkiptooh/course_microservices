@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, useState } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useState } from "react";
 import { Modal } from "react-bootstrap";
 import Course from '../models/course';
 import CourseService from "../services/course.service";
@@ -7,9 +7,15 @@ import CourseService from "../services/course.service";
 const CourseSave = forwardRef((props, ref)=>{
     useImperativeHandle(ref,()=>({
         showCourseModal(){
-            setShow(true); 
+            setTimeout(()=>{
+                setShow(true); 
+            }, 0);
         }
     }));
+
+    useEffect(()=> {
+        setCourse(props.course);
+    },[props.course]);
 
     const[course, setCourse] = useState(new Course("", "", 0));
     const[errorMessage, setErrorMessage] = useState('');
@@ -26,6 +32,7 @@ const CourseSave = forwardRef((props, ref)=>{
         }
 
         CourseService.saveCourse(course).then(response=>{
+            props.onSaved(response.data);
             setShow(false)
             setSubmitted(false)
         }).catch((err)=>{

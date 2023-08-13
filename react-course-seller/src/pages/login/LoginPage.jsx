@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import User from '../../models/user';
 import { useDispatch, useSelector } from "react-redux";
@@ -50,7 +51,7 @@ const LoginPage = () =>{
         AuthenticationService.login(user).then(response =>{
             // set user in session
             dispatch(setCurrentUser(response.data));
-            navigate('/profile')
+            navigate('/home')
 
         }).catch(error=>{
             console.log(error);

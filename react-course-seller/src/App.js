@@ -11,6 +11,7 @@ import { NotFoundPage } from './pages/not-found/NotFoundPage';
 import { UnauthorizedPage } from './pages/unauthorized/UnauthorizedPage';
 import { AuthGuard } from './guards/AuthGuard';
 import { Role } from './models/role';
+import { UserPage } from './pages/users/UserPage';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/home" element={<HomePage/>}/>
+          <Route path="/users" element={
+            <AuthGuard roles={[Role.ADMIN]}>
+              <UserPage/>
+           </AuthGuard>}/>
           <Route path="/admin" element={
             <AuthGuard roles={[Role.ADMIN]}>
               <AdminPage/>

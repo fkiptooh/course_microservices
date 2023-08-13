@@ -21,9 +21,14 @@ const NavBar = () =>{
             </a>
             <div className="navbar-nav me-auto">
                 {currentUser?.role === Role.ADMIN &&
-                 <li className="nav-item">
-                 <NavLink to='/admin' className="nav-link">Admin</NavLink>
-             </li>
+                <>
+                    <li className="nav-item">
+                        <NavLink to='/admin' className="nav-link">Admin</NavLink>
+                    </li>
+                    <li className='nav-item'>
+                        <NavLink to='/users' className="nav-link">Users</NavLink>
+                    </li>
+                </>
                 }
                 <li className="nav-item">
                     <NavLink to="/home" className="nav-link">

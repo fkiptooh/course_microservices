@@ -1,21 +1,64 @@
 import CourseService from '../../services/course.service';
 import { useEffect, useRef, useState } from "react";
 import { CourseSave } from '../../components/CourseSave';
+import Course from '../../models/course';
+import { CourseDelete } from '../../components/CourseDelete';
 
 const AdminPage = () => {
     const [courseList, setCourseList] = useState([]);
+    const [selectedCourse, setSelectedCourse] = useState(new Course('','',0));
+    const [errorMessage, setErrorMessage] = useState('');
+
     const saveComponent = useRef();
+    const deleteComponent = useRef();
     useEffect(()=>{
         CourseService.getAllCourses().then((response)=>{
             setCourseList(response.data); 
         })
     },[]);
     const createCourseRequest = () => {
+        setSelectedCourse(new Course('','', 0));
         saveComponent.current?.showCourseModal();
+    };
+    const editCourseRequest = (item) => {
+        setSelectedCourse(Object.assign({},item));
+        saveComponent.current?.showCourseModal();
+    };
+    const deleteCourseRequest = (course) => {
+        setSelectedCourse(course);
+        deleteComponent.current?.showDeleteModal();
+    }
+    const saveCourseWatcher = (course) => {
+        let itemIndex = courseList.findIndex(item => item.id === course.id);
+        if(itemIndex !== -1){
+            const newList = courseList.map((item) => {
+                if(item.id === course.id){
+                    return course;
+                }
+                return item;
+            });
+            return setCourseList(newList);
+        } else {
+            const newList = courseList.concat(course);
+            setCourseList(newList);
+        }
+    };
+    const deleteCourse = () => {
+        CourseService.deleteCourse(selectedCourse).then(_ =>{
+            setCourseList(courseList.filter(x => x.id !== selectedCourse.id));
+        }).catch((err)=>{
+            setErrorMessage('Unexpected error occured,');
+            console.log(err);
+        });
     };
     return(
         <div className='container'>
             <div className="pt-5">
+                {errorMessage &&
+                <div className="alert alert-danger">
+                    {errorMessage}
+                </div>
+                }
                 <div className="card">
                     <div className="card-header">
                         <div className="row">
@@ -48,10 +91,10 @@ const AdminPage = () => {
                                     <td>{`Ksh ${item.price}`}</td>
                                     <td>{new Date(item.createdTime).toLocaleDateString()}</td>
                                     <td>
-                                        <button className="btn btn-primary me-1">
+                                        <button className="btn btn-primary me-1" onClick={()=>editCourseRequest(item)}>
                                             Edit
                                         </button>
-                                        <button className="btn btn-danger">
+                                        <button className="btn btn-danger" onClick={()=> deleteCourseRequest(item)}>
                                             Delete
                                         </button>
                                     </td>
@@ -63,7 +106,8 @@ const AdminPage = () => {
                     </div>
                 </div>
             </div>
-            <CourseSave ref={saveComponent}></CourseSave>
+            <CourseSave ref={saveComponent} course={selectedCourse} onSaved={(p)=>saveCourseWatcher(p)}></CourseSave>
+            <CourseDelete ref={deleteComponent} onConfirmed={()=> deleteCourse()}></CourseDelete>
         </div>
     );
 };

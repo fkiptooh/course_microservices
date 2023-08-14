@@ -5,39 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2464552-dfb7-40d7-9f18-ea842146cb5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/CourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/PurchaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/request/CourseServiceRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/request/FeignConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/request/PurchaseServiceRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/UserPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/jwt/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/jwt/JwtProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/AuthenticationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/utils/SecurityUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiGateway/src/main/java/com/example/apigateway/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ApiGateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ApiGateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CourseMicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../CourseMicroservice/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/eurekamicroservice/EurekaMicroserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/eurekamicroservice/EurekaMicroserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/java/com/example/purchasemicroservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/java/com/example/purchasemicroservice/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PurchaseMicroservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-course-seller/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../react-course-seller/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-course-seller/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-course-seller/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-course-seller/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-course-seller/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +27,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -63,25 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "spring.configuration.checksum": "93edc9039afdcadae6285d98924b6fc9",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/flex/Desktop/Course-Microservices/ApiGateway&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;93edc9039afdcadae6285d98924b6fc9&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="EurekaMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="EurekaMicroservice" />
@@ -102,6 +75,12 @@
       <workItem from="1671902064101" duration="179000" />
       <workItem from="1671902261106" duration="5065000" />
       <workItem from="1672152091155" duration="2515000" />
+      <workItem from="1672248984403" duration="1580000" />
+      <workItem from="1672401902092" duration="1504000" />
+      <workItem from="1672662452379" duration="3209000" />
+      <workItem from="1672665828741" duration="1266000" />
+      <workItem from="1674193984582" duration="1092000" />
+      <workItem from="1691956904405" duration="764000" />
     </task>
     <servers />
   </component>

@@ -49,6 +49,7 @@ public class SecurityConfig
                 .permitAll()
                 .requestMatchers(HttpMethod.GET, "/gateway/course").permitAll()
                 .requestMatchers("/gateway/course/**").hasRole(Role.ADMIN.name())
+                .requestMatchers(HttpMethod.GET, "/api/user").hasRole(Role.ADMIN.name())
                 .anyRequest()
                 .authenticated();
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);

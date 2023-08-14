@@ -25,3 +25,6 @@ Content-Length: 52
     "password":"1234"
 }
 ````
+### To do list
+1. Add a forgot password functionality.
+2. Add an email field.

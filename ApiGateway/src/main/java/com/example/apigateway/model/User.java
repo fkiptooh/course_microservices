@@ -30,6 +30,10 @@ public class User
     @Column(name = "role", nullable = false)
     private Role role;
 
+    @Column(name = "reset_password_token")
+    private String resetPasswordToken;
+
     @Transient
     private String token;
+
 }
